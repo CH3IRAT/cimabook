@@ -1,0 +1,20 @@
+.body {
+    background: rgb(27,28,29);    font: 600 16px/18px 'Open Sans', sans-serif;
+}
+    .formulaire{
+    display: flex;
+
+ }
+.p{
+    color:white;
+    font-size: 22px;
+    font: 600 16px/18px 'Open Sans', sans-serif
+}
+.inpute{
+    border-radius: 30px;
+    border-radius: 25px;
+    width: "%";
+}
+.buttoon{
+    border-radius: 25px;
+}

@@ -1,0 +1,78 @@
+.cardi {
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -2px 8px 23px -11px rgba(0, 0, 0, 0.75);
+}
+.cardi .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.cardi:hover > .overlay {
+  display: block;
+  transition-duration: 0.8s;
+}
+.cardi:hover > img {
+  width: 105%;
+  transition: ease-in-out 0.3s;
+}
+.cardi img {
+  height: 330px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cardi .overlay .contenu {
+  opacity: 1 !important;
+  z-index: 9999;
+}
+
+.cardi .overlay .contenu i {
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 33%;
+  font-size: 5em;
+}
+.cardi .overlay .contenu i:hover {
+  color: orange;
+}
+.cardi .overlay .contenu span {
+  background-color: orange;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: black;
+  font-weight: bold;
+}
+
+.cardi h3 {
+  position: absolute;
+  bottom: -15px;
+  color: white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+}
